@@ -1,6 +1,7 @@
 #used to manipulate different parts of python runtime env Allows us to operate on interpreter itself
 import sys
 import logging
+from src.logger import logging
 #function to get the custom message for any error
 def error_message_details(error,error_details):
     _,_,exc_tb = error_details.exc_info() #gives all the information like file locaton ,line number etc
