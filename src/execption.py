@@ -3,7 +3,7 @@ import sys
 import logging
 from src.logger import logging
 #function to get the custom message for any error
-def error_message_details(error,error_details):
+def error_message_details(error,error_details = sys):
     _,_,exc_tb = error_details.exc_info() #gives all the information like file locaton ,line number etc
 
     file_name = exc_tb.tb_frame.f_code.co_filename
